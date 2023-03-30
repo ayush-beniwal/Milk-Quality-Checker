@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+joblib
+tpot
+pillow
+protobuf
+click
+streamlit
+seaborn
