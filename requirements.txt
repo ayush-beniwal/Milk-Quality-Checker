@@ -5,7 +5,7 @@ scikit-learn
 joblib
 tpot
 pillow
-protobuf
+protobuf==3.12
 click
 streamlit
 seaborn
