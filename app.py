@@ -48,7 +48,7 @@ def visualize_confidence_level(prediction_proba, model):
     fig, ax = plt.subplots()
 
     ax = sns.barplot(x=grad_percentage["Percentage"],
-                     y=grad_percentage["Grade"], ax=ax, orient="h", palette="mako", order=["High", "Medium", "Low"])
+                     y=grad_percentage["Grade"], ax=ax, orient="h", palette="inferno", order=["High", "Medium", "Low"])
     ax.bar_label(ax.containers[0])
 
     ax.set_xlim(xmin=0, xmax=100)
