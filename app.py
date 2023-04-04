@@ -13,11 +13,8 @@ modelinfo = {
     "Logistic Regression": "./models/LR.joblib",
     "Support Vector Machine": "./models/SVM.joblib",
     "K-Nearest Neighbor": "./models/KNN.joblib",
-    "Decision Trees": "./models/DT.joblib",
     "Random Forest": "./models/rf.joblib",
-    "Multi-layer Perceptron": "./models/mlpc.joblib",
-    "Support Vector Machine (Tuned)": "./models/tuned_svm.joblib",
-    "Gradient Boosting Classifier (Tuned)": "./models/tpot.joblib"
+    "Support Vector Machine (Tuned)": "./models/tuned_svm.joblib"
 }
 models = {}
 for i, v in modelinfo.items():
@@ -77,7 +74,7 @@ def visualize_confidence_level(prediction_proba, model):
 
 
 st.write("""
-# Milk Quality Prediction ML Web-App 
+# Milk Quality Prediction Exploratory Project 2023 
 This app predicts the **Quality of Milk**  using **milk features** input via the **side panel** 
 """)
 
@@ -95,11 +92,8 @@ def get_user_input():
         "Logistic Regression",
         "Support Vector Machine",
         "K-Nearest Neighbor",
-        "Decision Trees",
         "Random Forest",
-        "Multi-layer Perceptron",
-        "Support Vector Machine (Tuned)",
-        "Gradient Boosting Classifier (Tuned)"
+        "Support Vector Machine (Tuned)"
     )
     model = st.sidebar.selectbox("Model", models)
 
