@@ -8,6 +8,7 @@ import seaborn as sns
 from PIL import Image
 import random
 
+header = Image.open("header.jpg")
 
 modelinfo = {
     "Logistic Regression": "./models/LR.joblib",
@@ -72,10 +73,14 @@ def visualize_confidence_level(prediction_proba, model):
     st.pyplot(fig)
     return
 
+st.image(header, use_column_width=True)
+st.write("""
+# ME-291 Exploratory Project
+""")
 
 st.write("""
-# Milk Quality Prediction Exploratory Project 2023 
-This app predicts the **Quality of Milk**  using **milk features** input via the **side panel** 
+# Milk Quality Prediction
+This app predicts the *Quality of Milk*  using *milk features* input via the *side panel* 
 """)
 
 # user input parameter collection with streamlit side bar
