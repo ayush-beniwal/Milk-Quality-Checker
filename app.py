@@ -12,10 +12,8 @@ header = Image.open("header.jpg")
 
 modelinfo = {
     "Logistic Regression": "./models/LR.joblib",
-    "Support Vector Machine": "./models/SVM.joblib",
     "K-Nearest Neighbor": "./models/KNN.joblib",
     "Random Forest": "./models/rf.joblib",
-    "Support Vector Machine (Tuned)": "./models/tuned_svm.joblib"
 }
 models = {}
 for i, v in modelinfo.items():
